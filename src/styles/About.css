@@ -1,0 +1,60 @@
+.About {
+  overflow: hidden;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 35vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.About .about-greeting {
+  padding-bottom: 30vh;
+}
+.About h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 96px;
+}
+
+.About .wrapper {
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 90%;
+  font-size: 18px;
+}
+
+.About .resume-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+.About .animation-link:after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 1px solid #000;
+  transition: 0.5s;
+}
+
+.About .animation-link:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .About p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 576px) {
+  .About h1 {
+    font-size: 54px;
+  }
+  .About h2,
+  h3 {
+    font-size: 24px;
+  }
+}
