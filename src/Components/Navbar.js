@@ -27,7 +27,9 @@ export default function Navbar() {
           </button>
           <div
             className={`${
-              isOpen ? "collapse show " : "collapse"
+              isOpen
+                ? "collapse show text-center justify-content-center "
+                : "collapse"
             } navbar-collapse`}
             id="navbarNav"
           >
