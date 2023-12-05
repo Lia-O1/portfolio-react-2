@@ -1,16 +1,12 @@
-import React, { useEffect } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import tsukiNoYoru from "../images/tsuki-no-yoru-website.png";
 import weatherToday from "../images/weather-web-app.png";
 import "../styles/Home.css";
 
-function Home() {
-  const navigate = useNavigate();
-  useEffect(() => {
-    navigate("/");
-  }, []);
+export default function Home() {
   return (
     <div className="Home">
       <Navbar />
@@ -95,5 +91,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;
