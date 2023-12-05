@@ -8,9 +8,8 @@ import "../styles/Home.css";
 
 function Home() {
   const navigate = useNavigate();
-
   useEffect(() => {
-    navigate("https://snazzy-licorice-dd5fa8.netlify.app/");
+    navigate("/");
   }, []);
   return (
     <div className="Home">
