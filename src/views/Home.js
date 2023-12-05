@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import tsukiNoYoru from "../images/tsuki-no-yoru-website.png";
@@ -7,8 +7,10 @@ import weatherToday from "../images/weather-web-app.png";
 import "../styles/Home.css";
 
 function Home() {
+  const navigate = useNavigate();
+
   useEffect(() => {
-    window.location.href = "https://snazzy-licorice-dd5fa8.netlify.app/";
+    navigate("https://snazzy-licorice-dd5fa8.netlify.app/");
   }, []);
   return (
     <div className="Home">
