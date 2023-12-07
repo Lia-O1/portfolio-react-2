@@ -13,12 +13,21 @@
   color: #000;
   transition: all 250ms ease-in-out;
 }
+
 .Navbar .nav-link:hover {
   color: #b29d8c;
 }
 .Navbar .nav-link.active {
   text-decoration: underline;
-  color: #000 !important;
+  color: #000;
+}
+
+.Navbar .no-underline {
+  text-decoration: none !important;
+}
+
+.Navbar .no-underline:hover {
+  color: #b29d8c;
 }
 
 .Navbar img {

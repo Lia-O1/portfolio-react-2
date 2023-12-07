@@ -8,7 +8,7 @@ import "../styles/Home.css";
 
 export default function Home() {
   return (
-    <div className="Home">
+    <div className="Home" id="home-head">
       <Navbar />
       <div className="d-flex flex-column ustify-content-center align-items-center text-center">
         <h2>Hi, I am</h2>
@@ -30,7 +30,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className="space py-5 ">
+      <div className="space py-5" id="portfolio">
         <div className="d-flex flex-column between-parts">
           <div className="d-flex justify-content-start">
             Take a look at my portfolio - projects
@@ -38,7 +38,7 @@ export default function Home() {
         </div>
       </div>
       <div className="py-5">
-        <div className="container mt-5" id="portfolio">
+        <div className="container mt-5">
           <div className="row">
             <div className="col-lg-6 mb-3 mt-3">
               <a

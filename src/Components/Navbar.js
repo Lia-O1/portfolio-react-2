@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import { NavLink, useMatch } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import "../styles/Navbar.css";
 
 export default function Navbar() {
@@ -10,9 +10,9 @@ export default function Navbar() {
     <Fragment>
       <div className="container-fluid Navbar">
         <nav className="navbar navbar-expand-lg fixed-top px-3 my-navbar">
-          <NavLink to="/" className="navbar-brand m-0">
+          <NavHashLink to="/#home-head" className="navbar-brand m-0">
             <span className="nav-logo">Olha Stepko</span>
-          </NavLink>
+          </NavHashLink>
           <button
             onClick={toggle}
             className={`navbar-toggler  ${isOpen ? "" : "collapsed"}`}
@@ -34,30 +34,38 @@ export default function Navbar() {
             id="navbarNav"
           >
             <ul className="navbar-nav">
-              <li className="nav-item px-3">
-                <NavLink
-                  to="/"
-                  className={`nav-link ${useMatch("/") ? "active" : ""}`}
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li className="nav-item px-3">
-                <NavLink
-                  to="/about"
-                  className={`nav-link ${useMatch("/about") ? "active" : ""}`}
-                >
-                  About
-                </NavLink>
-              </li>
-              <li className="nav-item px-3 ">
-                <NavLink
-                  to="/contact"
-                  className={`nav-link ${useMatch("/contact") ? "active" : ""}`}
-                >
-                  Contact
-                </NavLink>
-              </li>
+              <NavHashLink
+                to="/#home-head"
+                className="nav-link"
+                activeClassName="active"
+                exact
+              >
+                Home
+              </NavHashLink>
+              <NavHashLink
+                to="/#portfolio"
+                className="nav-link no-underline"
+                activeClassName="active"
+                smooth
+              >
+                Portfolio
+              </NavHashLink>
+              <NavHashLink
+                to="/about/#about-head"
+                className="nav-link"
+                activeClassName="active"
+                exact
+              >
+                About
+              </NavHashLink>
+              <NavHashLink
+                to="/contact"
+                className="nav-link"
+                activeClassName="active"
+                exact
+              >
+                Contact
+              </NavHashLink>
             </ul>
           </div>
         </nav>

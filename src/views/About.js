@@ -6,7 +6,7 @@ import "../styles/About.css";
 
 export default function About() {
   return (
-    <div className="About">
+    <div className="About" id="about-head">
       <Navbar />
       <div className="text-center about-greeting">
         <h1>About me</h1>
