@@ -5,6 +5,7 @@ import "../styles/Navbar.css";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
 
   return (
     <Fragment>
@@ -39,6 +40,7 @@ export default function Navbar() {
                 className="nav-link"
                 activeClassName="active"
                 exact
+                onClick={closeMenu}
               >
                 Home
               </NavHashLink>
@@ -47,6 +49,7 @@ export default function Navbar() {
                 className="nav-link no-underline"
                 activeClassName="active"
                 smooth
+                onClick={closeMenu}
               >
                 Portfolio
               </NavHashLink>
@@ -55,6 +58,7 @@ export default function Navbar() {
                 className="nav-link"
                 activeClassName="active"
                 exact
+                onClick={closeMenu}
               >
                 About
               </NavHashLink>
@@ -63,6 +67,7 @@ export default function Navbar() {
                 className="nav-link"
                 activeClassName="active"
                 exact
+                onClick={closeMenu}
               >
                 Contact
               </NavHashLink>
