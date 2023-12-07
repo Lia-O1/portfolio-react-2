@@ -38,7 +38,7 @@ export default function Home() {
         </div>
       </div>
       <div className="py-5">
-        <div className="container mt-5">
+        <div className="container mt-5" id="portfolio">
           <div className="row">
             <div className="col-lg-6 mb-3 mt-3">
               <a
