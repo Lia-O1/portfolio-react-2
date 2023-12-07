@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Project Title - My Portfolio
+This is a personal portfolio website built with React. It showcases my work as a web developer. The website includes sections for Home, Portfolio, About, and Contact. Users can navigate to different sections using the navigation bar at the top of the page.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Code Showcase
+- **Routing**: The `App` component in `App.js` sets up the routes for the website using `react-router-dom`. It defines routes for the Home, About, and Contact pages.
+- **Navigation**: The `Navbar` component in `Navbar.js` handles the navigation for the website. It uses the `react-router-hash-link` package to enable smooth scrolling to different sections of the website. The navigation bar is responsive and its state is managed using React's `useState` hook. Please note that Portfolio link does not get underlined when active, as it is considered a part of the Home page.
 
-## Available Scripts
+## Note
+This repository is a continuation of a previous project (portfolio-react). The original project was developed in a different repository, but due to some deployment issues on Netlify, a new repository was created. That does not affect the quality or functionality of the code.
 
-In the project directory, you can run:
+## Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### `npm start`
+### Prerequisites
+You need to have the latest version of Node.js and npm installed. If not, you can download them from [here](https://nodejs.org/en/download).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Dependencies
+This project uses the following dependencies which will be installed automatically when you run `npm install`:
+- `react`: A JavaScript library for building user interfaces
+- `react-dom`: Serves as the entry point to the DOM and server renderers for React
+- `react-router-dom`: DOM bindings for React Router
+- `react-router-hash-link`: A React Router wrapper that scrolls the page to the element with the id that matches the current URL's hash
+- `react-bootstrap`: Bootstrap components built with React
+- `react-icons`: An npm package that provides vector icons and social logos for your React applications
+- `bootstrap`: A popular HTML, CSS, and JS library for developing responsive, mobile-first projects on the web
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installing
+Follow these steps to get a development environment running:
+1. Clone the repo: `git clone https://github.com/Lia-O1/portfolio-react-2.git`
+2. Navigate to the project folder: `cd portfolio-react-2`
+3. Install the dependencies: `npm install`
+4. Start the server: `npm start` (this will start the development server and open the app in a web browser)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Live Version
+A live version of the project is hosted on Netlify and can be accessed [here](www.oswebdev.dev).
