@@ -8,7 +8,7 @@ import "../styles/Home.css";
 
 export default function Home() {
   return (
-    <div className="Home" id="home-head">
+    <div className="Home" id="home">
       <Navbar />
       <div className="d-flex flex-column ustify-content-center align-items-center text-center">
         <h2>Hi, I am</h2>

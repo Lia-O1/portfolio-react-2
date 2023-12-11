@@ -10,8 +10,8 @@ export default function Navbar() {
   return (
     <Fragment>
       <div className="container-fluid Navbar">
-        <nav className="navbar navbar-expand-lg fixed-top px-3 my-navbar">
-          <NavHashLink to="/#home-head" className="navbar-brand m-0">
+        <nav className="navbar navbar-expand-lg fixed-top my-navbar">
+          <NavHashLink to="/#home" className="navbar-brand m-0 ps-3">
             <span className="nav-logo">Olha Stepko</span>
           </NavHashLink>
           <button
@@ -36,10 +36,11 @@ export default function Navbar() {
           >
             <ul className="navbar-nav">
               <NavHashLink
-                to="/#home-head"
+                to="/#home"
                 className={(navData) =>
                   navData.isActive ? "px-3 nav-link active" : "px-3 nav-link"
                 }
+                smooth
                 onClick={closeMenu}
               >
                 Home
@@ -57,7 +58,7 @@ export default function Navbar() {
                 Portfolio
               </NavHashLink>
               <NavHashLink
-                to="/about/#about-head"
+                to="/about/#about"
                 className={(navData) =>
                   navData.isActive ? "px-3 nav-link active" : "px-3 nav-link"
                 }
