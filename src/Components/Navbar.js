@@ -38,9 +38,8 @@ export default function Navbar() {
               <NavHashLink
                 to="/#home-head"
                 className={(navData) =>
-                  navData.isActive ? "nav-link active" : "nav-link"
+                  navData.isActive ? "px-3 nav-link active" : "px-3 nav-link"
                 }
-                exact
                 onClick={closeMenu}
               >
                 Home
@@ -49,8 +48,8 @@ export default function Navbar() {
                 to="/#portfolio"
                 className={(navData) =>
                   navData.isActive
-                    ? "nav-link no-underline active"
-                    : "nav-link no-underline"
+                    ? "px-3 nav-link no-underline active"
+                    : "px-3 nav-link no-underline"
                 }
                 smooth
                 onClick={closeMenu}
@@ -60,9 +59,8 @@ export default function Navbar() {
               <NavHashLink
                 to="/about/#about-head"
                 className={(navData) =>
-                  navData.isActive ? "nav-link active" : "nav-link"
+                  navData.isActive ? "px-3 nav-link active" : "px-3 nav-link"
                 }
-                exact
                 onClick={closeMenu}
               >
                 About
@@ -70,9 +68,8 @@ export default function Navbar() {
               <NavHashLink
                 to="/contact"
                 className={(navData) =>
-                  navData.isActive ? "nav-link active" : "nav-link"
+                  navData.isActive ? "px-3 nav-link active" : "px-3 nav-link"
                 }
-                exact
                 onClick={closeMenu}
               >
                 Contact
