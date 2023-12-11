@@ -37,8 +37,9 @@ export default function Navbar() {
             <ul className="navbar-nav">
               <NavHashLink
                 to="/#home-head"
-                className="nav-link"
-                activeClassName="active"
+                className={(navData) =>
+                  navData.isActive ? "nav-link active" : "nav-link"
+                }
                 exact
                 onClick={closeMenu}
               >
@@ -46,8 +47,11 @@ export default function Navbar() {
               </NavHashLink>
               <NavHashLink
                 to="/#portfolio"
-                className="nav-link no-underline"
-                activeClassName="active"
+                className={(navData) =>
+                  navData.isActive
+                    ? "nav-link no-underline active"
+                    : "nav-link no-underline"
+                }
                 smooth
                 onClick={closeMenu}
               >
@@ -55,8 +59,9 @@ export default function Navbar() {
               </NavHashLink>
               <NavHashLink
                 to="/about/#about-head"
-                className="nav-link"
-                activeClassName="active"
+                className={(navData) =>
+                  navData.isActive ? "nav-link active" : "nav-link"
+                }
                 exact
                 onClick={closeMenu}
               >
@@ -64,8 +69,9 @@ export default function Navbar() {
               </NavHashLink>
               <NavHashLink
                 to="/contact"
-                className="nav-link"
-                activeClassName="active"
+                className={(navData) =>
+                  navData.isActive ? "nav-link active" : "nav-link"
+                }
                 exact
                 onClick={closeMenu}
               >
