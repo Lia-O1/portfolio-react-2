@@ -1,9 +1,10 @@
 # Project Title - My Portfolio
-This is a personal portfolio website built with React. It showcases my work as a web developer. The website includes sections for Home, Portfolio, About, and Contact. Users can navigate to different sections using the navigation bar at the top of the page.
+This is a personal portfolio website built with React. It showcases my work as a web developer. The website includes pages for Home, About, and Contact. Users can navigate to different pages using the navigation bar at the top of the page.
 
 ## Code Showcase
 - **Routing**: The `App` component in `App.js` sets up the routes for the website using `react-router-dom`. It defines routes for the Home, About, and Contact pages.
-- **Navigation**: The `Navbar` component in `Navbar.js` handles the navigation for the website. It uses the `react-router-hash-link` package to enable smooth scrolling to different sections of the website. The navigation bar is responsive and its state is managed using React's `useState` hook. Please note that Portfolio link does not get underlined when active, as it is considered a part of the Home page.
+- **Navigation**: The `Navbar` component in `Navbar.js` handles the navigation for the website. It uses the `NavLink` from `react-router-dom` for navigation between different pages. The navigation bar is responsive and its state is managed using React's `useState` hook. The `useLocation` and `useEffect` hooks are used to scroll to the top of the page when the location changes.
+- **Home Page**: The `Home` component in `Home.js` uses the `HashLink` from `react-router-hash-link` to enable smooth scrolling to the Portfolio section of the Home page when the "My Portfolio" button is clicked.
 
 ## Note
 This repository is a continuation of a previous project (portfolio-react). The original project was developed in a different repository, but due to some deployment issues on Netlify, a new repository was created. That does not affect the quality or functionality of the code.
