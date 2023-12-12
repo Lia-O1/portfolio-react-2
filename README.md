@@ -33,4 +33,4 @@ Follow these steps to get a development environment running:
 4. Start the server: `npm start` (this will start the development server and open the app in a web browser)
 
 ## Live Version
-A live version of the project is hosted on Netlify and can be accessed [here](www.oswebdev.dev).
+A live version of the project is hosted on Netlify and can be accessed [here](https://oswebdev.dev/).
