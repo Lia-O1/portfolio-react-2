@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import tsukiNoYoru from "../images/tsuki-no-yoru-website.png";
@@ -8,26 +9,22 @@ import "../styles/Home.css";
 
 export default function Home() {
   return (
-    <div className="Home" id="home">
+    <div className="Home">
       <Navbar />
       <div className="d-flex flex-column ustify-content-center align-items-center text-center">
         <h2>Hi, I am</h2>
         <h1>Olha Stepko</h1>
         <h3>Front-end developer, based in Australia</h3>
         <div className="d-flex justify-content-center text-center mt-4 buttons">
-          <button href="/about-me.html" className="primary-btn rounded-2 me-3">
-            <NavLink to="/contact" className="link">
-              About me
-            </NavLink>
-          </button>
-          <button
-            href="/contact-me.html"
-            className="secondary-btn rounded-2 ms-3"
+          <HashLink
+            to="/#portfolio"
+            className="primary-btn link rounded-2 me-3"
           >
-            <NavLink to="/contact" className="link">
-              Contact me
-            </NavLink>
-          </button>
+            My Portfolio
+          </HashLink>
+          <NavLink to="/contact" className="secondary-btn link rounded-2 ms-3">
+            Contact me
+          </NavLink>
         </div>
       </div>
       <div className="space py-5" id="portfolio">

@@ -22,14 +22,6 @@
   color: #000;
 }
 
-.Navbar .no-underline {
-  text-decoration: none !important;
-}
-
-.Navbar .no-underline:hover {
-  color: #b29d8c;
-}
-
 .Navbar img {
   height: 60px;
 }

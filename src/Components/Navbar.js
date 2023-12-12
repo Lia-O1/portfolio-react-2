@@ -1,5 +1,5 @@
-import React, { Fragment, useState } from "react";
-import { NavHashLink } from "react-router-hash-link";
+import React, { Fragment, useState, useEffect } from "react";
+import { NavLink, useMatch, useLocation } from "react-router-dom";
 import "../styles/Navbar.css";
 
 export default function Navbar() {
@@ -7,13 +7,19 @@ export default function Navbar() {
   const toggle = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <Fragment>
       <div className="container-fluid Navbar">
-        <nav className="navbar navbar-expand-lg fixed-top my-navbar">
-          <NavHashLink to="/#home" className="navbar-brand m-0 ps-3">
+        <nav className="navbar navbar-expand-lg fixed-top my-navbar px-3">
+          <NavLink to="/" className="navbar-brand m-0">
             <span className="nav-logo">Olha Stepko</span>
-          </NavHashLink>
+          </NavLink>
           <button
             onClick={toggle}
             className={`navbar-toggler  ${isOpen ? "" : "collapsed"}`}
@@ -29,52 +35,39 @@ export default function Navbar() {
           <div
             className={`${
               isOpen
-                ? "collapse show text-center justify-content-center "
+                ? "collapse show text-center justify-content-center"
                 : "collapse"
             } navbar-collapse`}
             id="navbarNav"
           >
             <ul className="navbar-nav">
-              <NavHashLink
-                to="/#home"
-                className={(navData) =>
-                  navData.isActive ? "px-3 nav-link active" : "px-3 nav-link"
-                }
-                smooth
-                onClick={closeMenu}
-              >
-                Home
-              </NavHashLink>
-              <NavHashLink
-                to="/#portfolio"
-                className={(navData) =>
-                  navData.isActive
-                    ? "px-3 nav-link no-underline active"
-                    : "px-3 nav-link no-underline"
-                }
-                smooth
-                onClick={closeMenu}
-              >
-                Portfolio
-              </NavHashLink>
-              <NavHashLink
-                to="/about/#about"
-                className={(navData) =>
-                  navData.isActive ? "px-3 nav-link active" : "px-3 nav-link"
-                }
-                onClick={closeMenu}
-              >
-                About
-              </NavHashLink>
-              <NavHashLink
-                to="/contact"
-                className={(navData) =>
-                  navData.isActive ? "px-3 nav-link active" : "px-3 nav-link"
-                }
-                onClick={closeMenu}
-              >
-                Contact
-              </NavHashLink>
+              <li className="nav-item px-3">
+                <NavLink
+                  to="/"
+                  className={`nav-link ${useMatch("/") ? "active" : ""}`}
+                  onClick={closeMenu}
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li className="nav-item px-3">
+                <NavLink
+                  to="/about"
+                  className={`nav-link ${useMatch("/about") ? "active" : ""}`}
+                  onClick={closeMenu}
+                >
+                  About
+                </NavLink>
+              </li>
+              <li className="nav-item ps-3">
+                <NavLink
+                  to="/contact"
+                  className={`nav-link ${useMatch("/contact") ? "active" : ""}`}
+                  onClick={closeMenu}
+                >
+                  Contact
+                </NavLink>
+              </li>
             </ul>
           </div>
         </nav>
