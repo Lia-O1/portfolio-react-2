@@ -56,7 +56,7 @@ export default function About() {
                 </p>
                 <p className="d-none d-md-block">
                   <a
-                    href="https://drive.internxt.com/sh/file/89258a82-43ff-4c18-a5f2-bbb532161d03/f46dbf3a2a4ba9bf31acd54622bac9019017bc20f4d9929fdb770442a8dc3333"
+                    href="https://1drv.ms/b/s!Amwf-W7QJ58Ajb4TGCAB75hamHtgRw?e=f4Nxoi"
                     className="resume-link animation-link"
                   >
                     My Resume
@@ -64,7 +64,7 @@ export default function About() {
                 </p>
                 <p className="d-block d-md-none text-center">
                   <a
-                    href="https://drive.internxt.com/sh/file/89258a82-43ff-4c18-a5f2-bbb532161d03/f46dbf3a2a4ba9bf31acd54622bac9019017bc20f4d9929fdb770442a8dc3333"
+                    href="https://1drv.ms/b/s!Amwf-W7QJ58Ajb4TGCAB75hamHtgRw?e=f4Nxoi"
                     className="resume-link animation-link"
                   >
                     My Resume
