@@ -59,7 +59,7 @@ export default function Navbar() {
                   About
                 </NavLink>
               </li>
-              <li className="nav-item ps-3">
+              <li className="nav-item px-3">
                 <NavLink
                   to="/contact"
                   className={`nav-link ${useMatch("/contact") ? "active" : ""}`}
