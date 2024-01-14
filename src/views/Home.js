@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import Nav from "../Components/Nav";
+import Project from "../Components/Project";
 import Footer from "../Components/Footer";
 import tsukiNoYoru from "../images/tsuki-no-yoru-website.png";
 import weatherToday from "../images/weather-web-app.png";
@@ -41,50 +42,18 @@ export default function Home() {
         <div className="py-5">
           <div className="container mt-5">
             <div className="row">
-              <div className="col-lg-6 mb-3 mt-3">
-                <a
-                  href="https://sparkling-sundae-e35163.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="d-flex flex-column b-shadow rounded-2 project ">
-                    <div className="w-100 d-flex justify-content-center align-items-center p-5 pb-1">
-                      <div className="image-transition">
-                        <img
-                          src={tsukiNoYoru}
-                          alt="Tsuki No Yoru Preview"
-                          className="b-shadow rounded-2 w-100"
-                        />
-                      </div>
-                    </div>
-                    <div className="d-flex justify-content-start p-3 project-inf">
-                      Tsuki No Yoru
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-6 mb-3 mt-3">
-                <a
-                  href="https://jovial-bienenstitch-a81bd9.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="d-flex flex-column rounded-2 project b-shadow">
-                    <div className="w-100 d-flex justify-content-center align-items-center p-5 pb-1">
-                      <div className="image-transition">
-                        <img
-                          src={weatherToday}
-                          alt="WeatherToday Preview"
-                          className="b-shadow rounded-2 w-100"
-                        />
-                      </div>
-                    </div>
-                    <div className="d-flex justify-content-start p-3 project-inf">
-                      WeatherToday
-                    </div>
-                  </div>
-                </a>
-              </div>
+              <Project
+                href="https://sparkling-sundae-e35163.netlify.app/"
+                src={tsukiNoYoru}
+                alt="Tsuki No Yoru Preview"
+                title="Tsuki No Yoru"
+              />
+              <Project
+                href="https://jovial-bienenstitch-a81bd9.netlify.app/"
+                src={weatherToday}
+                alt="WeatherToday Preview"
+                title="WeatherToday"
+              />
             </div>
           </div>
         </div>
