@@ -1,0 +1,80 @@
+.Nav nav {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2000;
+}
+
+.Nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.Nav li {
+  height: 6vh;
+}
+
+.Nav li:first-child {
+  margin-right: auto;
+}
+
+.Nav button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.Nav .nav-logo,
+.Nav .nav-link {
+  text-decoration: none;
+  color: #000;
+  transition: all 250ms ease-in-out;
+  height: 100%;
+}
+
+.Nav .nav-logo {
+  font-family: "Great Vibes", cursive;
+  font-size: 32px;
+}
+
+.Nav .nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+.Nav .nav-link:hover {
+  color: #b29d8c;
+}
+
+.Nav .nav-link.active {
+  text-decoration: underline;
+  color: #000;
+}
+
+.Nav .sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(0, 0, 0, 0.3);
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.Nav .sidebar.open {
+  transform: translateY(0);
+}
+
+.Nav .sidebar li {
+  width: 100%;
+}
+
+.Nav .sidebar .nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+}

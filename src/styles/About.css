@@ -4,11 +4,11 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding-top: 35vh;
   font-family: "Montserrat", sans-serif;
 }
 
 .About .about-greeting {
+  padding-top: 36vh;
   padding-bottom: 30vh;
 }
 .About h1 {

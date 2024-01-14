@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
+import Nav from "../Components/Nav";
 import Footer from "../Components/Footer";
 import myPhoto from "../images/my-photo.jpg";
 import "../styles/About.css";
@@ -7,7 +7,7 @@ import "../styles/About.css";
 export default function About() {
   return (
     <div className="About">
-      <Navbar />
+      <Nav />
       <div className="text-center about-greeting">
         <h1>About me</h1>
         <h3 className="px-2">

@@ -4,12 +4,15 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding-top: 30vh;
-  padding-bottom: 10vh;
+  padding-bottom: 20vh;
   min-height: 100vh;
-
   font-family: "Montserrat", sans-serif;
 }
+
+.Contact .page-wrap {
+  padding-top: 26vh;
+}
+
 .Contact .wrapper {
   background-color: rgba(255, 255, 255, 0.8);
   max-width: 90%;
