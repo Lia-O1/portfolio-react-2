@@ -1,5 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "../styles/ProjectOverlay.css";
+
+const variants = {
+  open: { opacity: 1, transition: { duration: 0.5 } },
+  closed: { opacity: 0, transition: { duration: 0.5, ease: "easeInOut" } },
+};
 
 export default function ProjectOverlay({
   href,
@@ -12,7 +18,14 @@ export default function ProjectOverlay({
   close,
 }) {
   return (
-    <div className="d-flex justify-content-center align-items-center position-fixed w-100 h-100 ProjectOverlay">
+    <motion.div
+      className="d-flex justify-content-center align-items-center position-fixed w-100 h-100 ProjectOverlay"
+      variants={variants}
+      initial={"closed"}
+      animate={"open"}
+      exit={"closed"}
+      key="overlay"
+    >
       <div className="rounded-2 p-3 overlay">
         <div className="d-flex justify-content-center">
           <img src={src} alt={alt} className="rounded-2 b-shadow" />
@@ -50,6 +63,6 @@ export default function ProjectOverlay({
           <button onClick={close}>Close</button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

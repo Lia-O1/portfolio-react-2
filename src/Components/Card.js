@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 import Project from "./Project";
 import ProjectOverlay from "./ProjectOverlay";
 
@@ -14,7 +15,9 @@ export default function Card(props) {
   return (
     <>
       <Project open={hadleOpen} {...props} />
-      {isOpen && <ProjectOverlay close={hadleClose} {...props} />}
+      <AnimatePresence>
+        {isOpen && <ProjectOverlay close={hadleClose} {...props} />}
+      </AnimatePresence>
     </>
   );
 }
