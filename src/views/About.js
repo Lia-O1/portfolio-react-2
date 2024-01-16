@@ -4,6 +4,17 @@ import Footer from "../Components/Footer";
 import myPhoto from "../images/my-photo.jpg";
 import "../styles/About.css";
 
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React.js",
+  "Bootstrap",
+  "Framer Motion",
+  "APIs",
+];
+
 export default function About() {
   return (
     <div className="About">
@@ -32,44 +43,44 @@ export default function About() {
               </div>
               <div className="col-md-8">
                 <p>
-                  Hello there! I’m Olha, a dedicated Front-End Developer with a
-                  strong foundation in HTML, CSS, JavaScript, and React, and a
-                  passion for creating intuitive and engaging user experiences.
-                  Originally from Ukraine, I moved to Melbourne two years ago. I
-                  hold a Bachelor’s degree in Audio-Visual Techniques and Media
-                  Production, and this is where I discovered my passion for web
-                  development.
+                  Hello there! My name is Olha, and I am a committed Front-End
+                  Developer with expertise in HTML, CSS, JavaScript, and React,
+                  with a passion for creating intuitive and engaging user
+                  experiences.
                 </p>
                 <p>
-                  My unique blend of technical skills and creative flair enables
-                  me to develop websites and applications that are not only
-                  functional but also visually appealing. I have a keen eye for
-                  design and a deep understanding of user-centered design
-                  principles, which I believe are crucial for creating effective
-                  web solutions.
+                  I earned my Bachelor’s degree in Audio-Visual Techniques and
+                  Media Production, which sparked my interest in web
+                  development. My distinctive combination of technical abilities
+                  and creative vision allows me to create websites and
+                  applications that are not just functional, but also
+                  aesthetically pleasing. I have a keen eye for design and a
+                  deep understanding of user-centered design principles, which I
+                  believe are crucial for creating effective web solutions.
                 </p>
-                <p className="pb-0">
-                  I am committed to continuous learning and self-improvement,
-                  and always eager to take on new challenges and expand my
-                  knowledge. Here’s to the code yet to be written, the designs
-                  yet to be drawn, and the journey yet to be traveled!
+                <p className="pb-0 mb-0">
+                  Here’s to the code yet to be written, the designs yet to be
+                  drawn, and the journey yet to be traveled! I look forward to
+                  bringing more creative and user-friendly solutions to life.
                 </p>
-                <p className="d-none d-md-block">
+                <div className="d-flex flex-wrap my-3">
+                  {skills.map((skill) => {
+                    return (
+                      <div className="me-2 my-1 rounded-2 skill" key={skill}>
+                        {skill}
+                      </div>
+                    );
+                  })}
+                </div>
+                <hr className="d-block d-md-none" />
+                <div className="d-flex my-2 resume-wrapper">
                   <a
                     href="https://1drv.ms/b/s!Amwf-W7QJ58Ajb4TGCAB75hamHtgRw?e=f4Nxoi"
                     className="resume-link animation-link"
                   >
                     My Resume
                   </a>
-                </p>
-                <p className="d-block d-md-none text-center">
-                  <a
-                    href="https://1drv.ms/b/s!Amwf-W7QJ58Ajb4TGCAB75hamHtgRw?e=f4Nxoi"
-                    className="resume-link animation-link"
-                  >
-                    My Resume
-                  </a>
-                </p>
+                </div>
               </div>
             </div>
             <hr />
