@@ -1,12 +1,12 @@
 import React from "react";
 import "../styles/Home.css";
 
-export default function Project({ src, alt, title, open }) {
+export default function Project({ src, alt, title, hadleOpen }) {
   return (
     <div className="col-lg-6 position-relative mb-3 mt-3">
       <div
         className="d-flex flex-column b-shadow rounded-2 project"
-        onClick={open}
+        onClick={hadleOpen}
       >
         <div className="w-100 d-flex justify-content-center align-items-center p-5 pb-1">
           <div className="image-transition">
