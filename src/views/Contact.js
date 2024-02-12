@@ -6,13 +6,11 @@ import "../styles/Footer.css";
 
 export default function Contact() {
   return (
-    <div className="Contact">
+    <>
       <Nav />
-      <div className="page-wrap">
-        <h1 className="text-center pb-2 contact-headline">
-          Lets get in touch!
-        </h1>
-        <div className="container rounded-2 p-5 wrapper">
+      <div className="Contact">
+        <h1 className="text-center">Lets get in touch!</h1>
+        <div className="container rounded-2 p-5 b-shadow wrapper">
           <div className="row pb-4">
             <div className="col-md-7">
               <div className="row">
@@ -72,6 +70,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -4,13 +4,10 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  padding-top: 26vh;
   padding-bottom: 20vh;
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
-}
-
-.Contact .page-wrap {
-  padding-top: 26vh;
 }
 
 .Contact .wrapper {
@@ -19,7 +16,7 @@
   font-size: 18px;
 }
 
-.Contact .contact-headline {
+.Contact h1 {
   font-family: "Great Vibes", cursive;
   font-size: 72px;
 }
@@ -50,6 +47,10 @@
   justify-content: end;
 }
 
+.Contact .b-shadow {
+  box-shadow: 0px 5px 7px rgb(0, 0, 0, 0.3);
+}
+
 @media (max-width: 768px) {
   .Contact .contact-me-header,
   .Contact .contact-me-sub,
@@ -65,7 +66,7 @@
   }
 }
 @media (max-width: 576px) {
-  .Contact .contact-headline {
+  .Contact h1 {
     font-size: 54px;
   }
   .Contact .contact-me-sub,

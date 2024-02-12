@@ -4,90 +4,52 @@ import Footer from "../Components/Footer";
 import myPhoto from "../images/my-photo.jpg";
 import "../styles/About.css";
 
-const skills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React.js",
-  "Bootstrap",
-  "Framer Motion",
-  "APIs",
-];
-
 export default function About() {
   return (
-    <div className="About">
+    <>
       <Nav />
-      <div className="text-center about-greeting">
-        <h1>About me</h1>
-        <h3 className="px-2">
-          Passionate <br className="d-md-inline d-md-none" />
-          Front-End Developer <br />
-          with a unique blend of technical expertise and creative flair
-        </h3>
-      </div>
-      <div className="pb-5">
-        <div className="rounded-2 mx-auto px-1 py-3 b-shadow wrapper">
-          <div className="container about-me-inf">
-            <hr className="py-2" />
-            <div className="row d-flex align-items-center justify-content-center">
-              <div className="col-sm-4 d-none d-lg-block">
-                <div className="d-flex justify-content-start">
-                  <img
-                    src={myPhoto}
-                    alt="Olha"
-                    className="rounded-2 w-100 mb-3"
-                  />
-                </div>
+      <div className="About">
+        <h1 className="text-center">About me</h1>
+        <div className="container rounded-2 mx-auto p-4 b-shadow wrapper">
+          <div className="row">
+            <div className="col-4 d-none d-md-block my-auto">
+              <img src={myPhoto} alt="Olha" className="rounded-2 w-100" />
+            </div>
+            <div className="col-md-8 d-flex flex-column justify-content-center align-items">
+              <div className="rounded-2 p-3 my-2 p-wrapper b-shadow d-flex flex-column justify-content-center">
+                <span>Hello there!</span>
+                <p className="m-0">
+                  My name is Olha, and I am a committed Web Developer with
+                  expertise in HTML, CSS, JavaScript, and React, with a passion
+                  for creating intuitive and engaging user experiences
+                </p>
               </div>
-              <div className="col-md-8">
-                <p>
-                  Hello there! My name is Olha, and I am a committed Front-End
-                  Developer with expertise in HTML, CSS, JavaScript, and React,
-                  with a passion for creating intuitive and engaging user
-                  experiences.
+              <div className="rounded-2 p-3 my-2 p-wrapper b-shadow">
+                <span>Educational Background</span>
+                <p className="m-0">
+                  I hold a Bachelor’s degree in Audio-Visual Techniques and
+                  Media Production. It was during my time at university that I
+                  discovered my passion for web development. In addition to
+                  programming, my studies also encompassed design, typography,
+                  infographics, and 3D modeling and animation. This diverse
+                  educational background has equipped me with a unique blend of
+                  technical and creative skills, enabling me to create web
+                  solutions that are not only functional, but also aesthetically
+                  pleasing and user-friendly
                 </p>
-                <p>
-                  I earned my Bachelor’s degree in Audio-Visual Techniques and
-                  Media Production, which sparked my interest in web
-                  development. My distinctive combination of technical abilities
-                  and creative vision allows me to create websites and
-                  applications that are not just functional, but also
-                  aesthetically pleasing. I have a keen eye for design and a
-                  deep understanding of user-centered design principles, which I
-                  believe are crucial for creating effective web solutions.
+              </div>
+              <div className="rounded-2 p-3 my-2 p-wrapper b-shadow">
+                <span>Technical Proficiencies</span>
+                <p className="m-0">
+                  HTML, CSS, JavaScript, React.js, Next.js, TypeScript,
+                  Tailwind, Bootstrap, APIs
                 </p>
-                <p className="pb-0 mb-0">
-                  Here’s to the code yet to be written, the designs yet to be
-                  drawn, and the journey yet to be traveled! I look forward to
-                  bringing more creative and user-friendly solutions to life.
-                </p>
-                <div className="d-flex flex-wrap my-3">
-                  {skills.map((skill) => {
-                    return (
-                      <div className="me-2 my-1 rounded-2 skill" key={skill}>
-                        {skill}
-                      </div>
-                    );
-                  })}
-                </div>
-                <hr className="d-block d-md-none" />
-                <div className="d-flex my-2 resume-wrapper">
-                  <a
-                    href="https://1drv.ms/b/s!Amwf-W7QJ58Ajb4TGCAB75hamHtgRw?e=f4Nxoi"
-                    className="resume-link animation-link"
-                  >
-                    My Resume
-                  </a>
-                </div>
               </div>
             </div>
-            <hr />
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 }

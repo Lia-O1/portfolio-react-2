@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import Nav from "../Components/Nav";
 import Card from "../Components/Card";
@@ -16,7 +15,7 @@ export default function Home() {
         <div className="d-flex flex-column ustify-content-center align-items-center text-center">
           <h2>Hi, I am</h2>
           <h1>Olha Stepko</h1>
-          <h3>Front-end developer, based in Australia</h3>
+          <h3>Web Developer, based in Australia</h3>
           <div className="d-flex justify-content-center text-center mt-4 buttons">
             <HashLink
               to="/#portfolio"
@@ -24,12 +23,14 @@ export default function Home() {
             >
               My Portfolio
             </HashLink>
-            <NavLink
-              to="/contact"
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://1drv.ms/b/s!Amwf-W7QJ58AlvsKwmBkLK6p6tVV9Q?e=t72WYm"
               className="secondary-btn link rounded-2 ms-3"
             >
-              Contact me
-            </NavLink>
+              My Resume
+            </a>
           </div>
         </div>
         <div className="space py-5" id="portfolio">

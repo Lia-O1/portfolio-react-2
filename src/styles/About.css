@@ -5,12 +5,10 @@
   background-position: center;
   background-attachment: fixed;
   font-family: "Montserrat", sans-serif;
+  padding-top: 26vh;
+  min-height: 100vh;
 }
 
-.About .about-greeting {
-  padding-top: 36vh;
-  padding-bottom: 30vh;
-}
 .About h1 {
   font-family: "Great Vibes", cursive;
   font-size: 96px;
@@ -22,39 +20,39 @@
   font-size: 18px;
 }
 
-.About .resume-link {
+.About .p-wrapper {
+  border: 1px solid #fff;
+}
+
+.About .primary-btn {
+  font-size: 24px;
+  padding: 15px 25px;
+  border: 1px solid #000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  transition: box-shadow 300ms ease-in-out;
+  background: #b29d8c;
+}
+
+.About .primary-btn:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+
+.About a {
   color: #000;
   text-decoration: none;
+}
+
+.About .link {
   font-size: 24px;
-  position: relative;
 }
 
-.About .animation-link:after {
-  content: " ";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  border-bottom: 1px solid #000;
-  transition: 0.5s;
-}
-
-.About .animation-link:hover:after {
-  width: 100%;
-}
-
-.About .skill {
-  border: 1px solid #000;
-  padding: 5px;
+.About .b-shadow {
+  box-shadow: 0px 5px 7px rgb(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
   .About p {
     text-align: justify;
-  }
-
-  .About .resume-wrapper {
-    justify-content: center;
   }
 }
 
