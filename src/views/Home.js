@@ -3,6 +3,7 @@ import { HashLink } from "react-router-hash-link";
 import Nav from "../Components/Nav";
 import Card from "../Components/Card";
 import Footer from "../Components/Footer";
+import promptekey from "../images/propmtekey-web-app.png";
 import tsukiNoYoru from "../images/tsuki-no-yoru-website.png";
 import weatherToday from "../images/weather-web-app.png";
 import "../styles/Home.css";
@@ -43,6 +44,15 @@ export default function Home() {
         <div className="py-5">
           <div className="container mt-5">
             <div className="row">
+              <Card
+                href="https://share-ai-prompts-eosin.vercel.app/"
+                src={promptekey}
+                alt="Promptekey Preview"
+                title="Promptekey"
+                description="This project is a platform that allows users to create and share AI prompts. It features a home page where users can see a list of all posts and search for prompts by keyword, which can be in the username, tag, or prompt itself. Users can also click on a tag to search for it. After signing in, the profile page shows all the posts created by the user, and allows them to delete or edit their posts. Users can also view other users' profiles by clicking on their username or image on the home page"
+                tech="HTML, CSS, JavaScript, Next.js, React.js, NextAuth.js, Tailwind, Mongoose, MongoDB"
+                git="https://github.com/Lia-O1/share-ai-prompts"
+              />
               <Card
                 href="https://sparkling-sundae-e35163.netlify.app/"
                 src={tsukiNoYoru}
