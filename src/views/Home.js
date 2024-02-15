@@ -6,6 +6,7 @@ import Footer from "../Components/Footer";
 import promptekey from "../images/propmtekey-web-app.png";
 import tsukiNoYoru from "../images/tsuki-no-yoru-website.png";
 import weatherToday from "../images/weather-web-app.png";
+import emeraldhandmade from "../images/emeraldhandmade-website.png";
 import "../styles/Home.css";
 
 export default function Home() {
@@ -44,6 +45,15 @@ export default function Home() {
         <div className="py-5">
           <div className="container mt-5">
             <div className="row">
+              <Card
+                href="https://emeraldhandmade.vercel.app/"
+                src={emeraldhandmade}
+                alt="EmeraldHandmade Preview"
+                title="EmeraldHandmade"
+                description="EmeraldHandmade is an online shop where enthusiasts can discover unique handmade items. It features an intuitive navigation bar. Users can explore various categories, each opening into a dropdown with three subcategories. Each dropdown menu displays an image and name for the subcategory. Product images are displayed in a slider format. The custom useCart hook uses Zustand for state management and persists the cart state in local storage. The hook provides functions to add items to the cart, remove items from the cart, and clear the cart"
+                tech="HTML, CSS, JavaScript, Next.js, React.js, TypeScript, Tailwind, Zustand"
+                git="https://github.com/Lia-O1/emeraldhandmade"
+              />
               <Card
                 href="https://share-ai-prompts-eosin.vercel.app/"
                 src={promptekey}
