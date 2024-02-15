@@ -1,10 +1,11 @@
 # Project Title - My Portfolio
-This is a personal portfolio website built with React. It showcases my work as a web developer. The website includes pages for Home, About, and Contact. Users can navigate to different pages using the navigation bar at the top of the page.
+This is a personal portfolio website built with React. It showcases my work as a web developer. The website includes pages for Home, About, and Contact. The portfolio features a variety of functionalities such as a card component for project display, a ProjectOverlay component for detailed project view, and a custom hook for detecting clicks outside a component. It also includes complex animations managed with Framer Motion, enhancing the visual appeal and interactivity of the website.
 
 ## Code Showcase
 - **Routing**: The `App` component in `App.js` sets up the routes for the website using `react-router-dom`. It defines routes for the Home, About, and Contact pages.
-- **Navigation**: The `Navbar` component in `Navbar.js` handles the navigation for the website. It uses the `NavLink` from `react-router-dom` for navigation between different pages. The navigation bar is responsive and its state is managed using React's `useState` hook. The `useLocation` and `useEffect` hooks are used to scroll to the top of the page when the location changes.
-- **Home Page**: The `Home` component in `Home.js` uses the `HashLink` from `react-router-hash-link` to enable smooth scrolling to the Portfolio section of the Home page when the "My Portfolio" button is clicked.
+- **Framer Motion Animations**: Complex animations for the mobile navigation bar and the `ProjectOverlay` component have been implemented using the `framer-motion` library.
+- **Card Component**: This component displays a project in the portfolio. It uses the `useState` and `useEffect` hooks to manage its open state and persist it across sessions using `sessionStorage`. It also uses a  `useClickOutside` hook to close the project when a click is detected outside the component.
+- **ProjectOverlay Component**: This component displays the details of a project when a card is clicked. It uses the `forwardRef` function to receive a `ref` from the `Card` component for the click outside functionality. For accessibility purposes, component also closes when the "Escape" key is pressed. For better UX experience, scrolling on the webpage is disabled when the overlay is open and enabled when it is closed.
 
 ## Note
 This repository is a continuation of a previous project (portfolio-react). The original project was developed in a different repository, but due to some deployment issues on Netlify, a new repository was created. That does not affect the quality or functionality of the code.
@@ -17,13 +18,11 @@ You need to have the latest version of Node.js and npm installed. If not, you ca
 
 ### Dependencies
 This project uses the following dependencies which will be installed automatically when you run `npm install`:
-- `react`: A JavaScript library for building user interfaces
 - `react-dom`: Serves as the entry point to the DOM and server renderers for React
 - `react-router-dom`: DOM bindings for React Router
-- `react-router-hash-link`: A React Router wrapper that scrolls the page to the element with the id that matches the current URL's hash
-- `react-bootstrap`: Bootstrap components built with React
-- `react-icons`: An npm package that provides vector icons and social logos for your React applications
 - `bootstrap`: A popular HTML, CSS, and JS library for developing responsive, mobile-first projects on the web
+- `framer-motion`: A production-ready motion library for React
+- And others (refer to package.json for the full list)
 
 ### Installing
 Follow these steps to get a development environment running:
