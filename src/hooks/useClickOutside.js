@@ -5,8 +5,10 @@ const useClickOutside = (callback) => {
 
   useEffect(() => {
     const handleClick = (e) => {
-      if (!ref.current?.contains(e.target)) {
-        callback();
+      if (window === e.view) {
+        if (!ref.current?.contains(e.target)) {
+          callback();
+        }
       }
     };
 

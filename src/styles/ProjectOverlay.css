@@ -30,6 +30,10 @@
   padding: 10px;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 @media (max-width: 576px) {
   .ProjectOverlay {
     background-color: rgba(255, 255, 255, 0.8);

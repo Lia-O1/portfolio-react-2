@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { motion } from "framer-motion";
 import "../styles/ProjectOverlay.css";
 
@@ -7,16 +7,9 @@ const variants = {
   closed: { opacity: 0, transition: { duration: 0.5, ease: "easeInOut" } },
 };
 
-export default function ProjectOverlay({
-  href,
-  src,
-  alt,
-  title,
-  description,
-  tech,
-  git,
-  close,
-}) {
+const ProjectOverlay = forwardRef((props, ref) => {
+  const { href, src, alt, title, description, tech, git, close } = props;
+
   return (
     <motion.div
       className="d-flex justify-content-center align-items-center position-fixed w-100 h-100 ProjectOverlay"
@@ -26,7 +19,7 @@ export default function ProjectOverlay({
       exit={"closed"}
       key="overlay"
     >
-      <div className="rounded-2 p-3 overlay">
+      <div className="rounded-2 p-3 overlay" ref={ref}>
         <div className="d-flex justify-content-center">
           <img src={src} alt={alt} className="rounded-2 b-shadow" />
         </div>
@@ -65,4 +58,5 @@ export default function ProjectOverlay({
       </div>
     </motion.div>
   );
-}
+});
+export default ProjectOverlay;
