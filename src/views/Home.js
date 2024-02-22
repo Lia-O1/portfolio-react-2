@@ -28,7 +28,7 @@ export default function Home() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://1drv.ms/b/s!Amwf-W7QJ58AlvsKwmBkLK6p6tVV9Q?e=t72WYm"
+              href="https://1drv.ms/b/s!Amwf-W7QJ58AmM5yUQA8BBIe4hb1Og?e=yyF4bL"
               className="secondary-btn link rounded-2 ms-3"
             >
               My Resume
