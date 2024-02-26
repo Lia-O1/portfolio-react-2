@@ -1,5 +1,6 @@
 import React, { forwardRef } from "react";
 import { motion } from "framer-motion";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import "../styles/ProjectOverlay.css";
 
 const variants = {
@@ -8,7 +9,8 @@ const variants = {
 };
 
 const ProjectOverlay = forwardRef((props, ref) => {
-  const { href, src, alt, title, description, tech, git, close } = props;
+  const { href, src, srcMob, alt, title, description, tech, git, close } =
+    props;
 
   return (
     <motion.div
@@ -19,9 +21,20 @@ const ProjectOverlay = forwardRef((props, ref) => {
       exit={"closed"}
       key="overlay"
     >
-      <div className="rounded-2 p-3 overlay" ref={ref}>
-        <div className="d-flex justify-content-center">
-          <img src={src} alt={alt} className="rounded-2 b-shadow" />
+      <div className="rounded-2 p-4 overlay" ref={ref}>
+        <div className="container">
+          <div className="row d-flex align-items-center">
+            <div className="col-12 col-md-9 p-0 pe-md-3">
+              <img src={src} alt={alt} className="rounded-2 b-shadow" />
+            </div>
+            <div className="col-3 d-none d-md-block p-0">
+              <img
+                src={srcMob}
+                alt={`${alt} Mobile`}
+                className="rounded-2 b-shadow"
+              />
+            </div>
+          </div>
         </div>
         <div>
           <div className="mt-4 mb-2 title">{title}</div>
@@ -34,9 +47,13 @@ const ProjectOverlay = forwardRef((props, ref) => {
               href={href}
               target="_blank"
               rel="noreferrer"
-              className="text-decoration-underline"
+              className="position-relative link"
             >
-              Visit {title}
+              Visit {title}{" "}
+              <FaArrowUpRightFromSquare
+                size={10}
+                className="position-absolute"
+              />
             </a>
           </div>
           <div className="my-2">
@@ -45,9 +62,13 @@ const ProjectOverlay = forwardRef((props, ref) => {
               href={git}
               target="_blank"
               rel="noreferrer"
-              className="text-decoration-underline"
+              className="position-relative link"
             >
               View on GitHub
+              <FaArrowUpRightFromSquare
+                size={10}
+                className="position-absolute"
+              />
             </a>
           </div>
           <div className="my-2">{description}</div>

@@ -41,8 +41,8 @@ export default function About() {
               <div className="rounded-2 p-3 my-2 p-wrapper b-shadow">
                 <span>Technical Proficiencies</span>
                 <p className="m-0">
-                  HTML, CSS, JavaScript, React.js, Next.js, TypeScript,
-                  Tailwind, Bootstrap, APIs
+                  HTML, CSS, JavaScript, React.js, Next.js, TypeScript, Tailwind
+                  CSS, Bootstrap, APIs
                 </p>
               </div>
             </div>
