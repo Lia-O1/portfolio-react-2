@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <div className="Nav">
       <nav className="d-flex">
-        <ul className="d-flex justify-content-end align-items-center sticky-top">
+        <ul className="d-flex justify-content-end align-items-center sticky-top p-1">
           <li>
             {" "}
             <NavLink to="/" className="nav-logo d-flex align-items-center ps-4">
