@@ -1,29 +1,51 @@
 .ProjectOverlay {
   top: 3vh;
   left: 0;
-  background-color: transparent;
+  background-color: rgb(220, 219, 218, 0.6);
   z-index: 100;
 }
 
 .ProjectOverlay .overlay {
   width: 85%;
-  height: 85%;
-  background-color: rgba(255, 255, 255, 0.95);
-  overflow-y: scroll;
+  height: 75%;
+  background-color: #fff;
   font-size: 18px;
+  border: 5px solid #dcdbda;
+  border-radius: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .ProjectOverlay img {
   max-width: 100%;
   height: auto;
+  border: 2px solid #dcdbda;
+  padding: 5px;
+}
+
+.close-btn {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  padding: 5px;
+  border: 5px solid #dcdbda;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  cursor: pointer;
 }
 
 .ProjectOverlay .title {
-  font-size: 24px;
+  font-size: 36px;
+  font-family: "Great Vibes", cursive;
 }
 
 .ProjectOverlay .link {
   font-size: 18px;
+  color: #7d6047;
+}
+
+.ProjectOverlay .link:hover {
+  color: #37250b;
 }
 
 .ProjectOverlay button {
@@ -34,14 +56,24 @@
   padding: 10px;
 }
 
+.ProjectOverlay .container {
+  height: inherit !important;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .ProjectOverlay .overlay {
     width: 90%;
+    height: 85%;
     text-align: center;
+    align-items: stretch !important;
+    overflow-y: scroll;
+  }
+  .ProjectOverlay .container {
+    align-items: stretch !important;
   }
 }
 
