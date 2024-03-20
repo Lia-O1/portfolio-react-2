@@ -55,8 +55,8 @@ export default function Home() {
                 srcMob={emeraldhandmadeMob}
                 alt="EmeraldHandmade Preview"
                 title="EmeraldHandmade"
-                description="EmeraldHandmade is an online shop where enthusiasts can discover unique handmade items. It features an intuitive navigation bar. Users can explore various categories, each opening into a dropdown with three subcategories. Each dropdown menu displays an image and name for the subcategory. Product images are displayed in a slider format. The custom useCart hook uses Zustand for state management and persists the cart state in local storage. The hook provides functions to add items to the cart, remove items from the cart, and clear the cart"
-                tech="HTML, CSS, JavaScript, Next.js, React.js, TypeScript, Tailwind CSS, Zustand"
+                description="EmeraldHandmade is an online shop where enthusiasts can discover unique handmade items. It features an intuitive navigation bar. Users can explore various categories, each opening into a dropdown with three subcategories. The custom useCart hook uses Zustand for state management and persists the cart state in local storage. The hook provides functions to add items to the cart, remove items from the cart, and clear the cart"
+                tech="HTML, CSS, JavaScript, Next.js, React.js, TypeScript, Tailwind CSS, shadcn/ui, Zustand"
                 git="https://github.com/Lia-O1/emeraldhandmade"
               />
               <Card
@@ -86,7 +86,7 @@ export default function Home() {
                 alt="WeatherToday Preview"
                 title="WeatherToday"
                 description="This project is a weather web app that uses the OpenWeather API to fetch weather data. You can search for locations around the world, or click the My Location button to search for your current location automatically"
-                tech="HTML, CSS, JavaScript, React.js, Bootstrap, Web API"
+                tech="HTML, CSS, JavaScript, React.js, Bootstrap, Axios, Web API"
                 git="https://github.com/Lia-O1/weather-react"
               />
             </div>
